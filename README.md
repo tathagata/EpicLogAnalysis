@@ -45,6 +45,9 @@ So how do I replicate such an enterprise level system? Certainly impossible in m
 I took a simple ubuntu-precise-12.04-amd64-server image and added the port 8000 to the security group. Then just spawn 10 instances of the same ami.
 There are command line utilities for controlling ec2 instances, may be I'll incroporate them at a later stage. 
 
+<img src='http://dl.dropbox.com/u/18146922/2013-03-01%2011.01.27.jpg'>
+
+
 
 ### The server
 For the web server, we use a micro-framework called bottle.py - and all we have there is a call to the shell utility fortune.
