@@ -2,10 +2,25 @@
 
 ## Epic Operational Intelligence Battle: SumoLogic vs Splunk Storm vs Loggly vs Logstash vs ...
 
-(WORK IN PROGRESS - like everything)
+(WORK IN PROGRESS - like everything else in life)
 
-How beneficial is operational analytics? While I do understand the help to DevOps, what benefit does it bring to 
-the business and more importantly the customer? It surely must be beneficial as this space is as crowded as the 
+What is operational intelligence?
+_Operational intelligence (OI) is a category of real-time dynamic, business analytics that delivers visibility and insight into data, streaming events and business operations. Operational Intelligence solutions run queries against streaming data feeds and event data to deliver real-time analytic results as operational instructions. Operational Intelligence provides organizations the ability to make decisions and immediately act on these analytic insights, through manual or automated actions._
+
+Yes, that's Wikipedia verbatim! So who do you think would be most happy with this?
+
+<img src="http://www.technologyreview.com/blog/mimssbits/files/77798/devops_borat.png"> 
+
+Definitely this guy. Chinqui!
+ 
+I worked briefly maintaining ugly enterprise software which had grown organically over years with numerous different systems talking to each
+other and spewing numerous lines of logs. Whenever systems would go down - we had to login to multiple servers, look through the 
+log files and troubleshoot the outages. Once detected, we wrote bandaid scripts that would monitor systems for failure and generate 
+alerts or restart servers/services.
+
+
+While I do understand the help to DevOps, what benefit does it bring to 
+the business? And more importantly the customer? It surely must be beneficial as this space is as crowded as the 
 bazars of India - Splunk is probably the most well known company, but companies like SumoLogic, PaperTrail, Loggly,
 Logarythm, and even the free and open source alternative Logstash are being heavily used and many of them definitely have 
 paying customers.
@@ -31,11 +46,6 @@ will pay for such a service, but lets say somehow we have growth-hacked thousand
 
 
 ### Replicating an enterprise set up
-I worked briefly maintaining ugly enterprise software which had grown organically over years with numerous different systems talking to each
-other and spewing numerous lines of logs. Whenever systems would go down - we had to login to multiple servers, look through the 
-log files and troubleshoot the outages. Once detected, we wrote bandaid scripts that would monitor systems for failure and generate 
-alerts or restart servers/services.
-
 ### EC2 servers
 So how do I replicate such an enterprise level system? Certainly impossible in my old laptop. So we go to the cloud. 
 
