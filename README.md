@@ -2,6 +2,7 @@
 
 ## Epic Operational Intelligence Battle: SumoLogic vs Splunk Storm vs Loggly vs Logstash vs ...
 
+(WORK IN PROGRESS - like everything)
 
 How beneficial is operational analytics? While I do understand the help to DevOps, what benefit does it bring to 
 the business and more importantly the customer? It surely must be beneficial as this space is as crowded as the 
