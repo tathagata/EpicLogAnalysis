@@ -9,8 +9,8 @@ def make_iso8601_time_string(time_struct):
 
 
 def test_sumo(from_time,to_time):
-	username='tdasgu2@uic.edu'
-	password='SgGv3RigROT6'
+	username=''
+	password=''
 	url = "https://api.sumologic.com/api/v1/logs/search?q=error&from="+from_time+"&to="+to_time+"&tz=GMT"
 	print url
 	#request = urllib2.Request("https://api.sumologic.com/api/v1/logs/search?q=error&from=2013-02-27T00:01:02&to=2013-02-27T23:00:00")
