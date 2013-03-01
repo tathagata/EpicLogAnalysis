@@ -99,6 +99,7 @@ How real time are the two services really? That in my mind is really the acid te
 
 
 ### Metrics to measure business problem
+<img src='https://dl.dropbox.com/u/18146922/SumoLogicDashBoard.png'>
 
 To measure how we are serving our customers we define the following metrics
 
