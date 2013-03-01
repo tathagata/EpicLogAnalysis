@@ -1,0 +1,32 @@
+{
+"sumo.blades" : [ {
+"type" : "localWildCard",
+"name" : "auth-logs",
+"pathExpression" : "/var/log/auth.log",
+"category" : "os-security"
+},
+{
+"type" : "localWildCard",
+"name" : "syslog",
+"pathExpression" : "/var/log/syslog",
+"category" : "os-health"
+},
+{
+"type" : "localWildCard",
+"name" : "messages",
+"pathExpression" : "/var/log/messages",
+"category" : "os-health"
+},
+{
+"type" : "localWildCard",
+"name" : "sshd-logs",
+"pathExpression" : "/var/log/secure",
+"category" : "os-security"
+},
+{
+"type" : "localWildCard",
+"name" : "sumoapp-console",
+"pathExpression" : "/home/ubuntu/logs/fortune.log",
+"category" : "bottle-app"
+}]
+}
