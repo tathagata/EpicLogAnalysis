@@ -1,10 +1,12 @@
+
+
 ## Epic Operational Intelligence Battle: SumoLogic vs Splunk Storm vs Loggly vs Logstash vs ...
 
 
-How beneficial is opeartional analytics? While I do understand the help to DevOps, what benefit does it bring to 
+How beneficial is operational analytics? While I do understand the help to DevOps, what benefit does it bring to 
 the business and more importantly the customer? It surely must be beneficial as this space is as crowded as the 
 bazars of India - Splunk is probably the most well known company, but companies like SumoLogic, PaperTrail, Loggly,
-Logarythm, and even the free and open source alternative Logstash are being heavily used and many of them deifnitely have 
+Logarythm, and even the free and open source alternative Logstash are being heavily used and many of them definitely have 
 paying customers.
 
 I looked around for some data to compare them, but there was nothing good. So, I started to test them out. I begin with SumoLogic
@@ -24,20 +26,20 @@ will pay for such a service, but lets say somehow we have growth-hacked thousand
 * How much load can we serve?
 
 ### Replicating an enterprise set up
-I worked briefly mainitaining ugly enterprise software which had grown organically over years with numerous different systems talking to each
-other and spewing numerous lines of logs. Whenever systems would go down - we had to login to multiple severs, look through the 
+I worked briefly maintaining ugly enterprise software which had grown organically over years with numerous different systems talking to each
+other and spewing numerous lines of logs. Whenever systems would go down - we had to login to multiple servers, look through the 
 log files and troubleshoot the outages. Once detected, we wrote bandaid scripts that would monitor systems for failure and generate 
-alerts or restart severs/services.
+alerts or restart servers/services.
 
 ### EC2 servers
-So how do I replicate such an enterprise level system? Certianly impossible in my old laptop. So we go to the cloud. 
+So how do I replicate such an enterprise level system? Certainly impossible in my old laptop. So we go to the cloud. 
 
 I have been working on building a django/Backbone.js app with a friend of mine to help recruiters and candidates connect quickly at career fairs.
 And we started to experiment with EC2 micro instances. I'm by no means a cloud expert, but the pleasure of having a sudo-able command line makes life 
 easy.
 
-I took a simple ubuntu-precise-12.04-amd64-server image and added the port 8000 to the secruity group. Then just spawn 10 instances of the same.
-There are command line utils for controlling ec2 instances, but for my purpose I chose not to delve into them. 
+I took a simple ubuntu-precise-12.04-amd64-server image and added the port 8000 to the security group. Then just spawn 10 instances of the same.
+There are command line utilities for controlling ec2 instances, but for my purpose I chose not to delve into them. 
 
 
 ### The server
@@ -82,7 +84,7 @@ I'm supposed to get back a response.`
 While Apachebench is a great tool for load testing web severs, what I needed was to test urls with multiple parameters. Turns out,
 there isn't a good way to do that in ab. So we have to roll our sleeves a bit and get write something similar
 
-To mimick a random word search from our user, we generate a random word and curl the web url for each instance.
+To mimic a random word search from our user, we generate a random word and curl the web url for each instance.
 
     word=$(sed `perl -e "print int rand(99999)"`"q;d" /usr/share/dict/words | sed "s/'//g" );
     curl  http://$1.compute-1.amazonaws.com:8000/fortune/$word
@@ -140,12 +142,3 @@ To measure how we are serving our customers we define the following metrics
 
 
 (Test results)
-
-
-
-
-
-
-
-
-
