@@ -24,7 +24,11 @@ will pay for such a service, but lets say somehow we have growth-hacked thousand
 ### Business Questions we want to answer
 * What % of queries are being replied with a quote? If this is too low we need to invest in generating more quotes?
 * How often are we repeating the same quotes?
-* How much load can we serve?
+
+### Tech questions 
+* How much load can we serve? Can we avoid downtime by minining log data?
+* How does changing log messages due to code change or software upgrade effect search results?
+
 
 ### Replicating an enterprise set up
 I worked briefly maintaining ugly enterprise software which had grown organically over years with numerous different systems talking to each
